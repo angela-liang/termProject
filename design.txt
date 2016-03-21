@@ -1,0 +1,33 @@
+The program attempts to implement an interactive user experience based on the
+1940 Disney Film, Fantasia, specifically the segment, "The Sorcerer's
+Apprentice". To create this experience, I utilized the Kinect in conjunction
+with the Pygame module. The Kinect allowed me to track several of the user's
+joint positions and from these coordinates, calculate and detect specific
+motions that correspond to controls in the program.
+When the program begins, a hat is mapped onto the users head and gloves, which 
+are rotatable, are mapped onto the user's hands.
+The main objects the user is able to control are mops, water, and stars. By
+using the lasso hand state at the bottom half of the screen, new mops can be
+created. Spreading both hands outwards split the most recently created mop into
+two. The motion of the mops corresponds to the motion of the users hands when
+they are positioned at the bottom of the screen. Mops may be deleted by
+selecting a mop and then forming the hand into a closed state. The user can
+also cause water to crash up on the screen by swiping a hand upwards rapidly. 
+Stars can be created by using the lasso hand state and moving the hand towards 
+the Kinect anywhere in the top half of the screen. The stars are also able to 
+be moved in a collective motion with the positions of the hands when at the top 
+half of the screen. Additionally, the stars may be formed into logarithmic 
+spirals of 10 stars each by crossing the hands near the top of the screen. 
+Leaving the hands crossed will cause the spiral to rotate. Finally, the music
+that is playing can be paused by forming both hands into the closed state.
+Exiting the fantasy in this manner will also cause all images on screen to
+disappear. Reopening the hands will cause the music to resume and the images to
+reappear. These features may be directly accessed through the play mode or 
+individually introduced through the tutorial mode.
+The user interface is roughly based off of the visual aspects of "The
+Sorcerer's Apprentice" segment of Fantasia because the program is meant to
+provide the user with a simplified version of the first-hand experience of
+Mickey as the apprentice discovering the sorcerer's powers.
+A new element I implemented after the User-study-a-thon is being able to return
+to the splash screen at any point in the program in order to allow easier use
+of the program as a comprehensive packaged product.
